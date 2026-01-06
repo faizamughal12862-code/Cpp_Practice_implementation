@@ -1,4 +1,5 @@
 #include <iostream>
+#include<string>
 using namespace std;
 
 int grade(int marks);
@@ -136,7 +137,7 @@ int main() {
     // Q#3(d)
     string input;
     cout<< "Enter a string: ";
-    cin >> input;
+    getline(cin, input);
 
     int countV = vowel(input);
     cout<< "The numbr of vowels in string are " << countV << endl;
@@ -181,7 +182,7 @@ int vowel(string str)
     int count=0;
     for(int i=0; i< str.length(); i++)
     {
-        char ch= str[i];
+        char ch= tolower(str[i]);
         if(ch == 'a'|| ch== 'e' || ch== 'i'|| ch =='o' || ch=='u' )
         {
             count++;
