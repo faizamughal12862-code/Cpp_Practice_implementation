@@ -84,7 +84,7 @@ int main() {
     int oddCount=0;
 
 
-    for (int i=0; i< 2; i++)
+    for (int i=0; i< 20; i++)
     {
         cout<< "Enter number " << i+1;
         cin>> arr3[i];
@@ -178,7 +178,7 @@ int discount(int price)
 
 int vowel(string str)
 {
-    int count;
+    int count=0;
     for(int i=0; i< str.length(); i++)
     {
         char ch= str[i];
